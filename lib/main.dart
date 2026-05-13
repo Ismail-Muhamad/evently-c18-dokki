@@ -2,9 +2,13 @@ import 'package:evently_c18_dokki/core/l10n/app_localizations.dart';
 import 'package:evently_c18_dokki/core/provider/app_config_provider.dart';
 import 'package:evently_c18_dokki/core/theme/app_theme.dart';
 import 'package:evently_c18_dokki/core/utils/shared_prefernces_keys.dart';
+import 'package:evently_c18_dokki/ui/add_event/add_event_screen.dart';
 import 'package:evently_c18_dokki/ui/app_setup/app_setup_screen.dart';
+import 'package:evently_c18_dokki/ui/edit_event/edit_event_screen.dart';
+import 'package:evently_c18_dokki/ui/event_details/event_details_screen.dart';
 import 'package:evently_c18_dokki/ui/home/home_screen.dart';
 import 'package:evently_c18_dokki/ui/login/login_screen.dart';
+import 'package:evently_c18_dokki/ui/onboarding/onboarding_screen.dart';
 import 'package:evently_c18_dokki/ui/signup/signup_screen.dart';
 import 'package:evently_c18_dokki/ui/splash/splash_screen.dart';
 import 'package:firebase_auth/firebase_auth.dart';
@@ -62,6 +66,10 @@ class _MyAppState extends State<MyApp> {
               LoginScreen.routeName: (_) => LoginScreen(),
               SignupScreen.routeName: (_) => SignupScreen(),
               HomeScreen.routeName: (_) => HomeScreen(),
+              OnboardingScreen.routeName: (_) => OnboardingScreen(),
+              AddEventScreen.routeName: (_) => const AddEventScreen(),
+              EventDetailsScreen.routeName: (_) => const EventDetailsScreen(),
+              EditEventScreen.routeName: (_) => const EditEventScreen(),
             },
           );
         },
